@@ -1,0 +1,274 @@
+.homeSection{
+    width: 80%;
+}
+.homeNav{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.userNameprovide{
+    width: 60%;
+}
+.searchBar{
+    width: 40%;
+    padding: 10px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.headerPart{
+    display: flex;
+    gap: 15px;
+    padding: 10px 20px;
+    /* height: 6%; */
+    border: 1px #3A444C solid;
+    /* width: 93%; */
+}
+.userNameprovide{
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+    /* padding: 10px 20px; */
+    height: 6%;
+    /* border: 1px #3A444C solid; */
+    height: 100%;
+}
+.homeIcon{
+    width: 30px;
+}
+.totalPosts{
+    color: #8A98A4;
+    font-weight: 500;
+}
+.profileSection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.profilePhotoRelated {
+    position: relative;
+}
+
+.coverPhoto {
+    width: 100%;
+    height: auto;
+}
+
+.bigProfile {
+    position: absolute;
+    bottom: -20%;
+    left: 20px;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #4BA0EC;
+}
+
+.infoContainer {
+    padding: 60px 20px 20px 25px;
+    /* border: #3A444C 1px solid; */
+}
+.optionsPosts {
+    display: flex;
+    width: 100%;
+}
+
+.option {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #8A98A4;
+    position: relative;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #3A444C;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.option.selected {
+    color: #4BA0EC;
+    border-bottom: 2px solid #4BA0EC;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 18px;
+}
+.olderPosts{
+    padding: 15px 10px;
+    display: flex;
+    border: #3A444C 1px solid;
+    gap: 15px;
+    align-items: flex-start;
+}
+.profileNameMain{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+}
+.postInfo{
+    padding: 5px 0px;
+}
+.username{
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.postActions {
+    position: relative;
+}
+
+.reactionsButton {
+    background-color: transparent;
+    border: none;
+    color: #1DA1F2;
+    font-weight: bold;
+    cursor: pointer;
+}
+.reactionsButtonOther {
+    background-color: transparent;
+    border: none;
+    color: #1DA1F2;
+    font-weight: bold;
+    cursor: pointer;
+}
+.reactionsContainer {
+    position: relative; /* Position for absolute elements inside */
+}
+
+.reactionsMenu {
+    display: none; /* Hidden by default */
+    position: absolute; /* Position it absolutely */
+    background-color: #283340; /* Background color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    gap: 5px;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.reactionsContainer:hover .reactionsMenu {
+    display: flex; 
+}
+
+.reactionsButton {
+    background-color: transparent;
+    border: none;
+    color: #1DA1F2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reaction {
+    color: #FFFFFF;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.reaction:hover {
+    background-color: #1DA1F2;
+    border-radius: 5px; 
+}
+.reactIcon{
+    width: 30px;
+}
+.reactIconMain{
+    width: 20px;
+}
+
+.searchBar {
+    display: flex;
+}
+
+.searchContainer {
+    position: relative;
+    width: 100%;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 15px; 
+    top: 20.4%;
+    transform: translateY(-1.4%);
+    width: 20px;
+    color: #AAB8C2;
+    pointer-events: none;
+}
+
+.searchPosts {
+    width: 82%;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 33px;
+    background-color: #283340;
+    color: #FFFFFF;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.searchPosts::placeholder {
+    color: #FFFFFF;
+}
+
+.searchPosts:focus {
+    background-color: #000;
+}
+.placeholdersImages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    width: 100%; 
+}
+
+.placeholdersImages img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; 
+    object-fit: cover; 
+}
+.cardComming{
+    background-color: #1C2733;
+    padding: 0px 15px;
+    border-radius: 15px;
+}
+.mightLike,
+.Comming {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    border-bottom: #3A444C 1px solid;
+    padding: 15px 0px;
+}
+
+.Comming {
+    height: 150px;
+    font-weight: 300;
+    position: relative;
+    overflow: hidden; /* Hide overflowing letters */
+}
+
+.letter {
+    display: inline-block;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Animation properties */
+    transform: translateY(0); /* Default position */
+    opacity: 1; /* Default opacity */
+}
+
+.drop {
+    transform: translateY(20px); /* Move the letter down */
+    opacity: 0; /* Fade out */
+}
+.splitedWords{
+    padding: 20px 15px;
+    height: 150px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
