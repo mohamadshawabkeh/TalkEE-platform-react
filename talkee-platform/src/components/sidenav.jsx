@@ -32,7 +32,8 @@ function Sidenav() {
         const handleClick = () => {
             navigate(item.route); // Navigate to the selected route
         };
-
+    
+        // Handle the title (first item)
         if (index === 0) {
             return (
                 <div key={item.route} className="titleSide">
@@ -51,14 +52,19 @@ function Sidenav() {
                 </div>
             );
         } else {
+            // Render notification circle for the notification item
+            // const isNotification = index === 2; // Notification item check
             return (
                 <div key={item.route} className={`navItem ${isMenuVisible || !isMobileView ? "visible" : "hidden"}`} onClick={handleClick}>
-                    <img src={item.icon} alt={item.alt} className="navIcon" />
+                    <div className="notificationWrapper">
+                        {/* {isNotification && <div className="notificationCircle">1</div>} */}
+                        <img src={item.icon} alt={item.alt} className="navIcon" />
+                    </div>
                     <span className="navTitle">{item.name}</span>
                 </div>
             );
         }
-    });
+    });    
 
     return (
         <section className="sidenavContainer">

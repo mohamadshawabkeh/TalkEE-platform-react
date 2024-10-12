@@ -7,6 +7,7 @@ body,html,#root {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #17202A;
+  /* background-color: transparent; */
   color: #FFFFFF;
   padding: 0;
   width: 100%;

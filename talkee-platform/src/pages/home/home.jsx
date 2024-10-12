@@ -13,6 +13,7 @@ import reShare from "../../assets/icons/reShare.svg"
 import share from "../../assets/icons/share.svg"
 import searchIcon from "../../assets/icons/searchIcon.svg"
 import placeholderImg from "../../assets/icons/placeholderImg.svg"
+import Notification from "../notification/notification";
 
 const AnimatedText = () => {
     const text = "COMING SOON...";
@@ -60,15 +61,18 @@ function Home(){
 
                 <div className="userNameprovide">
                   <div className="headerPart">
-                    <img src={homeIcon} alt="home icon" className="homeIcon" />
-                    <div className="banner">
-                    <h3 className="username">
-                        your name
-                    </h3>
-                    <h5 className="totalPosts">
-                        total posts
-                    </h5>
+                    <div className="leftSideContainerHome">
+                       <img src={homeIcon} alt="home icon" className="homeIcon" />
+                           <div className="banner">
+                                <h3 className="username">
+                                    your name
+                               </h3>
+                                <h5 className="totalPosts">
+                                    total posts
+                                </h5>
+                          </div>      
                     </div>
+                    <Notification/>
                   </div>
                   <div className="makePost">
                     <textarea 

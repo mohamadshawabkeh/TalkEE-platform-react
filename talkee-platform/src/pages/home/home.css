@@ -23,6 +23,8 @@
     /* height: 6%; */
     border: 1px #3A444C solid;
     /* width: 93%; */
+    justify-content: space-between;
+    align-items: center;
 }
 .userNameprovide{
     display: flex;
@@ -254,4 +256,8 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+}
+.leftSideContainerHome{
+    display: flex;
+    gap: 15px;
 }

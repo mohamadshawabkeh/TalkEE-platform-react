@@ -101,3 +101,25 @@ gap: 13px;
 .navItem.visible, .userSection.visible {
     display: flex; 
 }
+.notificationWrapper {
+    position: relative; 
+    display: flex;
+    align-items: center;
+}
+
+.notificationCircle {
+    position: absolute;
+    top: 8%;
+    left: 20px;
+    transform: translate(-50%, -50%); 
+    width: 17px;
+    height: 17px;
+    background-color: #1A91DA;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    align-items: center;
+    border: 2px solid #FFFFFF;
+    pointer-events: none; 
+}

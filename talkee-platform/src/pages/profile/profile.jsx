@@ -14,6 +14,7 @@ import searchIcon from "../../assets/icons/searchIcon.svg"
 import placeholderImg from "../../assets/icons/placeholderImg.svg"
 import profile from "../../assets/icons/profile.svg"
 import coverPhoto from "../../assets/icons/coverPhoto.svg"
+import Notification from "../notification/notification";
 
 function Profile(){
     const [selectedOption, setSelectedOption] = useState("posts");
@@ -63,16 +64,19 @@ function Profile(){
             <div className="homeNav">
 
                 <div className="userNameprovide">
-                  <div className="headerPart">
-                    <img src={profile} alt="profile icon" className="homeIcon" />
-                    <div className="banner">
-                    <h3 className="profileName">
-                        your name
-                    </h3>
-                    <h5 className="totalPosts">
-                        total posts
-                    </h5>
+                <div className="headerPart">
+                    <div className="leftSideContainerHome">
+                       <img src={profile} alt="home icon" className="homeIcon" />
+                           <div className="banner">
+                                <h3 className="username">
+                                    your name
+                               </h3>
+                                <h5 className="totalPosts">
+                                    total posts
+                                </h5>
+                          </div>      
                     </div>
+                    <Notification/>
                   </div>
                   <div className="profileSection">
                         <div className="profilePhotoRelated">

@@ -1,0 +1,22 @@
+
+.signupContainer {
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: #FFFFFF; 
+    text-align: center; 
+    background: linear-gradient(to bottom, #283340,#1A91DA);
+    width: 100%;
+}
+.mainContainer{
+    padding: 20px 15px;
+    height: 480px;
+    width: 375px;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+}
+/* body,html,#root {
+    background: linear-gradient(to bottom, #283340,#1A91DA);
+}
+ */
